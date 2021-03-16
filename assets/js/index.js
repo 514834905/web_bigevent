@@ -21,12 +21,12 @@ function getUserInfo() {
                 return layui.layer.msg(res.message)
             }
             //调动renderAvater渲染用户头像
-            renderAvater(res.data)
+            renderAvatar(res.data)
         }
     })
 }
 
-function renderAvater(user) {
+function renderAvatar(user) {
     //获取用户名称
     var name = user.nickname || user.username;
     $("#welcome").html("欢迎&nbsp;&nbsp;" + name)
